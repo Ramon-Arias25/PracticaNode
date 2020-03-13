@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imsShare</title>
+    <!--boostrap--> 
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <!--bootswatch sandstone-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.css">
+    <!--customer style--> 
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <!--<link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">-->
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="/public/images/imgshare-logo.png" alt="imgShare">
+            </a>
+        </div>
+    </nav>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8">
+                {{{ body }}}
+            </div>
+            <div class="col-md-4">
+                {{> stats }}
+                {{> popular }}
+                {{> comments }}
+            </div>
+        </div>
+        
+    </div>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- CUSTOM CODE -->
+    <script src="/public/js/scripts.js"></script>
+</body>
+</html>
